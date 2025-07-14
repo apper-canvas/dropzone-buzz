@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Custom toast styling */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-height: 60px;
+  padding: 16px;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #00D4AA 0%, #42A5F5 100%);
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #EF5350 0%, #FF7043 100%);
+  color: white;
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #FFA726 0%, #FFB74D 100%);
+  color: white;
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #42A5F5 0%, #64B5F6 100%);
+  color: white;
+}
+
+.Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #5B67F0 0%, #8B92FF 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4C5AE6 0%, #7A86FF 100%);
+}
+
+/* Animation utilities */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, #f0f0f0 0px, #e0e0e0 40px, #f0f0f0 80px);
+  background-size: 200px 100%;
+}
+
+/* File type specific colors */
+.file-type-image {
+  border-left: 4px solid #42A5F5;
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.05) 0%, rgba(66, 165, 245, 0.1) 100%);
+}
+
+.file-type-document {
+  border-left: 4px solid #FFA726;
+  background: linear-gradient(135deg, rgba(255, 167, 38, 0.05) 0%, rgba(255, 167, 38, 0.1) 100%);
+}
+
+.file-type-video {
+  border-left: 4px solid #EF5350;
+  background: linear-gradient(135deg, rgba(239, 83, 80, 0.05) 0%, rgba(239, 83, 80, 0.1) 100%);
+}
+
+.file-type-audio {
+  border-left: 4px solid #AB47BC;
+  background: linear-gradient(135deg, rgba(171, 71, 188, 0.05) 0%, rgba(171, 71, 188, 0.1) 100%);
+}
+
+.file-type-archive {
+  border-left: 4px solid #66BB6A;
+  background: linear-gradient(135deg, rgba(102, 187, 106, 0.05) 0%, rgba(102, 187, 106, 0.1) 100%);
+}
+
+.file-type-other {
+  border-left: 4px solid #78909C;
+  background: linear-gradient(135deg, rgba(120, 144, 156, 0.05) 0%, rgba(120, 144, 156, 0.1) 100%);
+}
+
+/* Drop zone animations */
+.drop-zone-active {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+}
+
+/* Progress bar animations */
+.progress-bar-fill {
+  transition: width 0.3s ease-out;
+}
+
+/* File card hover effects */
+.file-card {
+  transition: all 0.2s ease-out;
+}
+
+.file-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Status indicators */
+.status-indicator {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-indicator.pending {
+  background: #FFA726;
+  animation: pulse 2s infinite;
+}
+
+.status-indicator.uploading {
+  background: #42A5F5;
+  animation: pulse 1s infinite;
+}
+
+.status-indicator.completed {
+  background: #00D4AA;
+}
+
+.status-indicator.failed {
+  background: #EF5350;
+}
+
+/* Button hover effects */
+.btn-primary {
+  background: linear-gradient(135deg, #5B67F0 0%, #8B92FF 100%);
+  transition: all 0.2s ease-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91, 103, 240, 0.3);
+}
+
+.btn-secondary {
+  background: rgba(91, 103, 240, 0.1);
+  color: #5B67F0;
+  transition: all 0.2s ease-out;
+}
+
+.btn-secondary:hover {
+  background: rgba(91, 103, 240, 0.2);
+  transform: translateY(-1px);
+}

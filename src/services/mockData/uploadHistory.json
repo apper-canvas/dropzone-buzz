@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "name": "project-presentation.pdf",
+    "size": 2048576,
+    "type": "application/pdf",
+    "status": "completed",
+    "progress": 100,
+    "uploadedAt": "2024-01-15T14:30:00Z",
+    "url": "https://example.com/files/1/project-presentation.pdf",
+    "preview": null
+  },
+  {
+    "Id": 2,
+    "name": "vacation-photos.zip",
+    "size": 15728640,
+    "type": "application/zip",
+    "status": "completed",
+    "progress": 100,
+    "uploadedAt": "2024-01-15T13:45:00Z",
+    "url": "https://example.com/files/2/vacation-photos.zip",
+    "preview": null
+  },
+  {
+    "Id": 3,
+    "name": "meeting-recording.mp4",
+    "size": 52428800,
+    "type": "video/mp4",
+    "status": "completed",
+    "progress": 100,
+    "uploadedAt": "2024-01-15T12:15:00Z",
+    "url": "https://example.com/files/3/meeting-recording.mp4",
+    "preview": null
+  },
+  {
+    "Id": 4,
+    "name": "design-mockups.png",
+    "size": 1048576,
+    "type": "image/png",
+    "status": "completed",
+    "progress": 100,
+    "uploadedAt": "2024-01-15T11:30:00Z",
+    "url": "https://example.com/files/4/design-mockups.png",
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+  },
+  {
+    "Id": 5,
+    "name": "budget-spreadsheet.xlsx",
+    "size": 512000,
+    "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "completed",
+    "progress": 100,
+    "uploadedAt": "2024-01-15T10:00:00Z",
+    "url": "https://example.com/files/5/budget-spreadsheet.xlsx",
+    "preview": null
+  }
+]
