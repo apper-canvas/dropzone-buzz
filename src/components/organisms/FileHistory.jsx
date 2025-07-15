@@ -47,14 +47,15 @@ const FileHistory = () => {
           await uploadService.removeFile(fileId);
           setFiles(prev => prev.filter(file => file.Id !== fileId));
           toast.success("File removed successfully!");
-          break;
-        case "preview":
+break;
+        case "preview": {
           const file = files.find(f => f.Id === fileId);
           if (file) {
             setPreviewFile(file);
             setIsPreviewOpen(true);
           }
           break;
+        }
         default:
           break;
       }
